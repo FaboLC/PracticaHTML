@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Lasko</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(46, 133, 160);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 400px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 400px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(79, 148, 160);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Pasteleria Lasko</h2>
+    </header>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./pasteles.html">Pasteles</a></li>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a href="./pastelero.html">Pastelero</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Pasteles</h2>
+            <div class="productos-ver">
+                <ul class="productos">
+                    <lo class="productos-animados" data-aos="flip-left" data-aos-offset="200">
+                        <div class="ficha">
+                            <span class="nombre">Chocolate</span>
+                            <span class="precio">$400.00</span>
+                            <img src="C:/Users/Fabricio/Documents/Cursos/LaunchX/FrontEnd-Mision/HTML/images/chocolate.png" alt="Chocolate" width="250px" height="150px">
+                            <span class="nombre">Cajeta</span>
+                            <span class="precio">$450.00</span>    
+                            <img src="C:/Users/Fabricio/Documents/Cursos/LaunchX/FrontEnd-Mision/HTML/images/cajeta.png" alt="Cajeta<" width="250px" height="150px">
+                            <span class="nombre">Zanahoria</span>
+                            <span class="precio">$350.00</span>  
+                            <img src="C:/Users/Fabricio/Documents/Cursos/LaunchX/FrontEnd-Mision/HTML/images/zanahoria.png" alt="Znahoria" width="250px" height="150px">
+                            <span class="nombre">Limón</span>
+                            <span class="precio">$350.00</span>  
+                            <img src="C:/Users/Fabricio/Documents/Cursos/LaunchX/FrontEnd-Mision/HTML/images/limon.png" alt="Limon" width="250px" height="150px"> 
+                        </div>
+                    </lo>
+                </ul>
+
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Local B, Plaza San Diego, Col. Tabasco 2000     Telefono: (993)3556148        Lunes a Domingo de 9:00 am - 7:00 pm</p>
+    </footer>
+
+</body>
+
+</html>

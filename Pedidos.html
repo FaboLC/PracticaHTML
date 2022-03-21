@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Lasko</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(46, 133, 160);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 400px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 400px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(79, 148, 160);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Pasteleria Lasko</h2>
+    </header>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./pasteles.html">Pasteles</a></li>
+                <li><a href="./pedidos.html">Pedidos</a></li>
+                <li><a href="./pastelero.html">Pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Pedidos</h2>
+            <form action="/accion.js" id="pedidos<" method="post">
+                <label for="Nombre:"> Nombre</label>
+                <input type="text" id="Nombre" name="Nombre">
+                <br>
+                <label for="Telefono:"> Telefono</label>
+                <input type="tel" id="Telefono" name="Telefono">
+                <br>
+                <label for="Correo-e:"> Correo electrónico</label>
+                <input type="email" id="Nombre" name="Nombre">
+                <br>
+                <label for="Descripcion"> Descripción general</label>
+                <input type="text" id="Descripcion" name="Descripcion">
+                <br>
+                <p>Seleccione los sabores con los que desea combinar su pastel</p>
+                <input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+                <label for="topping1">Chocolate</label>
+                <input type="checkbox" id="topping2" name="topping2" value="Cajeta">
+                <label for="topping2">Cajeta</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Zanahoria">
+                <label for="topping3">Zanahoria</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Nuez">
+                <label for="topping3">Nuez</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Limon">
+                <label for="topping3">Limón</label>
+                <p>Seleccione los adornos para su pastel</p>
+                <input type="checkbox" id="topping1" name="topping1" value="Letras">
+                <label for="topping1">Letras</label>
+                <input type="checkbox" id="topping2" name="topping2" value="Frutas">
+                <label for="topping2">Frutas</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Velas">
+                <label for="topping3">Velas</label><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>Local B, Plaza San Diego, Col. Tabasco 2000     Telefono: (993)3556148        Lunes a Domingo de 9:00 am - 7:00 pm</p>
+    </footer>
+
+</body>
+
+</html>
